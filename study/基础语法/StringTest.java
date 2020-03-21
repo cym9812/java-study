@@ -65,12 +65,12 @@ public class StringTest {
 
         // 反转
         String m = "abcdefg";
-        String n = "";
-        for (int i = m.length(); i >= 0; i--){
-            n += m.charAt(i);
+        StringBuilder n = new StringBuilder();
+        for (int i = m.length() - 1; i >= 0; i--){
+            n.append(m.charAt(i));
         }
-
-        System.out.println(n);
+        String res = n.toString();
+        System.out.println(res);
 
 
 
